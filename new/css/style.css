@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@font-face { font-family: 'Arsenal'; src: url("../fonts/ArsenalRegular.woff") format("woff"), url("../fonts/ArsenalRegular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Arsenal'; src: url("../fonts/ArsenalBold.woff") format("woff"), url("../fonts/ArsenalBold.ttf") format("truetype"); font-weight: 700; font-style: normal; }
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+html, body { font-family: Arsenal, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; color: #515151; }
+
+html, body { height: 100%; }
+
+.wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 100%; }
+
+.wrap { -webkit-box-flex: 1; -ms-flex: 1 0 auto; flex: 1 0 auto; }
+
+footer { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+
+.content { max-width: 1230px; width: 100%; margin: auto; padding: 0 30px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.header__menu li { display: inline-block; }
+
+header a { text-decoration: none; }
+
+header .content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; min-height: 119px; }
+
+.header__contacts { max-width: 185px; text-align: right; }
+
+img { width: 100%; }
+
+/*.item { max-width: 370px; }*/
+
+header { min-height: 119px; -webkit-box-shadow: 0 1px 46px rgba(0, 0, 0, 0.11); box-shadow: 0 1px 46px rgba(0, 0, 0, 0.11); background-color: #fefefe; }
+
+.header__logo { max-width: 276px; width: 100%; }
+
+.header__menu { max-width: 570px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.header__menu a { color: #515151; font-size: 18px; line-height: 60px; }
+
+.header__menu a:hover { color: #000056; border-bottom: 1px solid rgba(0, 0, 56, 0.15); }
+
+.contacts__phone { color: #000000; font-size: 18px; font-weight: 700; }
+
+.contacts__mail { color: #000056; font-size: 18px; }
+
+.contacts__callback { background: transparent; border: transparent; outline: none; color: #000000; font-size: 14px; }
+.contacts__callback:hover { border-bottom: 1px solid rgba(187, 187, 187, 0.31); }
+
+.phone_ico { display: inline-block; vertical-align: middle; width: 26px; height: 26px; background: url(../img/phone-call.png); }
+
+.first { color: #515151; font-size: 30px; font-weight: 700; line-height: 39.21px; text-transform: uppercase; padding: 50px 0 39px; text-align: center; }
+
+h1 { color: #515151; font-size: 30px; font-weight: 700; line-height: 39.21px; text-transform: uppercase; padding: 50px 0 30px; }
+
+h2 { color: #515151; font-size: 25px; font-weight: 700;padding: 20px 0 10px; }
+h3 { color: #515151; font-size: 20px; font-weight: 700;padding: 30px 0 10px; }
+
+.item_text { padding: 20px 35px 20px 20px; }
+.item_text h3 { border-bottom: 1px solid #e5e5e5; padding-bottom: 14px; margin-bottom: 19px; }
+.item_text li { text-transform: uppercase; list-style-type: none; }
+.item_text li a { border-bottom: 1px solid #e5e5e5; text-decoration: none; color: #000056; font-size: 14px; font-weight: 700; }
+
+.item_block {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ 
+.top{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    width: 270px;
+    height: 300px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.item_text{
+    max-width: 250px;
+}
+.item_text p{
+    color: #515151;
+    font-family: Arsenal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.item_text a{
+    margin-top: 10px;
+}
+.item_img1{
+    width: 132px;
+    height: 237px;
+}
+.item_img2{
+    width: 225px;
+    height: 199px;
+}
+.item_img3{
+    width: 221px;
+    height: 238px;
+}
+.item_img4{
+    width: 192px;
+    height: 230px;
+}
+.item_img5{
+    width: 176px;
+    height: 238px;
+}
+.item_img6{
+    width: 228px;
+    height: 188px;
+}
+.item_img7{
+    width: 227px;
+    height: 239px;
+}
+.item_img8{
+    width: 225px;
+    height: 119px;
+}
+.important{
+    list-style:disc;
+    margin: 20px 40px;
+}
+.text{
+    margin-bottom: 100px;
+}
+.content .item_text a{
+    text-decoration: none;
+    color:#000056;
+    font-weight: 700;
+    border-bottom: 1px solid #000056;
+}
+.text a{
+    text-decoration: none;
+    color:#000056;
+    border-bottom: 1px solid #000056;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #202320;
+}
+footer .content{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .content a{
+    text-decoration: none;
+    color:#515151;
+}
+main nav{
+   display: flex;
+   list-style: none;
+   width: 100%;
+   height: 30px;
+   background-color: #000056;
+   color: #fefefe;
+}
+main nav li:first-child{
+    margin-left: 90px;
+}
+main nav a{
+    color: #fefefe;
+    text-decoration: none;
+    
+}
+main nav a:hover {
+   color: #fefefe;
+   border-bottom: 1px solid white;
+}
+
