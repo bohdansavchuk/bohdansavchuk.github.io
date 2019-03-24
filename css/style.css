@@ -454,6 +454,11 @@ footer{
 	padding-bottom: 20px;
 }
 
+.phone a{
+	color: #fff;
+	text-decoratione: none;
+}
+
 
 .menu-link{
 	display: none;
